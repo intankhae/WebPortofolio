@@ -1,0 +1,126 @@
+*style.css*
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fedbf8, #fee0f5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Judul utama */
+h1 {
+    color: #f8479f;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Kotak aplikasi */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    position: relative;
+    left: -30px;
+}
+
+/* Judul aplikasi */
+.container h2 {
+    color: #f8479f;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+/* Label */
+label {
+    display: block;
+    color: #f8479f;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* Efek input */
+input:focus {
+    border-color: #f1b1ee;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #f8479f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek tombol */
+button:hover {
+    background-color: #f1b1ee;
+    transform: translateY(-2px);
+}
+
+/* Hasil perhitungan */
+#hasil {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    color: #fc62ce;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    left: -20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 19px;
+    }
+
+
+}
