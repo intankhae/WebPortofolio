@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto dan Video pada Halaman Web</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 14px;
+            color: #222;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            border-top: 2px solid #344054;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 5px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 10px 5px;
+        }
+
+        p {
+            margin: 8px 5px;
+        }
+
+        section {
+            border-top: 1px solid #ccc;
+            padding: 5px 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 10px 5px;
+        }
+
+        .gambar1 {
+            width: 500px;
+        }
+
+        .gambar2 {
+            width: 600px;
+        }
+
+        .avatar {
+            width: 250px;
+        }
+
+        video {
+            display: block;
+            width: 600px;
+            max-width: 100%;
+            margin: 10px 5px;
+            background-color: black;
+        }
+
+        iframe {
+            display: block;
+            width: 600px;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            margin: 10px 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Foto dan Video pada Halaman Web</h1>
+            <p>
+                Praktikum menampilkan foto dan video
+                menggunakan HTML
+            </p>
+        </header>
+
+        <!-- 1. Menampilkan Foto -->
+        <section>
+            <h2>1. Menampilkan Foto</h2>
+
+            <p>
+                Foto dapat ditampilkan pada halaman web
+                menggunakan tag img.
+            </p>
+
+            <img
+                src="img/gambar1.jpg"
+                alt="Power Puffgirl"
+                class="gambar1"
+            >
+        </section>
+
+        <!-- 2. Foto dengan Ukuran -->
+        <section>
+            <h2>2. Foto dengan Ukuran</h2>
+
+        <p>
+            Foto dapat diatur ukuran lebar dan tingginya
+            menggunakan atribut width dan height.
+        </p>
+
+        <img src="img/gambar2.jpg"
+            alt="Pemandangan alam"
+            width="300"
+            height="150">
+        </section>
+
+        <!-- 3. File dengan Link -->
+        <section>
+            <h2>3. File dengan Link</h2>
+
+            <p>
+                Foto bisa dibuat menjadi link yang
+                mengarah ke halaman lain.
+            </p>
+
+            <a href="https://www.google.com" target="_blank">
+                <img
+                    src="img/profil.jpg"
+                    alt="Foto profil"
+                    class="avatar"
+                >
+            </a>
+        </section>
+
+        <!-- 4. Video -->
+        <section>
+            <h2>4. Video</h2>
+
+            <p>
+                Video dapat ditampilkan menggunakan
+                tag video.
+            </p>
+
+            <video controls>
+                <source src="img/video1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+        </section>
+
+        <!-- 5. Video Autoplay -->
+        <section>
+            <h2>5. Video Autoplay</h2>
+
+            <p>
+                Video dapat diputar secara otomatis
+                menggunakan atribut autoplay.
+            </p>
+
+            <video autoplay muted loop playsinline controls>
+                <source src="img/video1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+        </section>
+
+       <!-- 6. Video YouTube -->
+<section>
+    <h2>6. Video YouTube</h2>
+
+    <p>
+        Video YouTube dapat ditampilkan pada halaman web
+        menggunakan iframe.
+    </p>
+
+    <iframe
+        src="https://www.youtube.com/embed/LnSYihRoGA4"
+        title="Video YouTube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+</section>
+    </div>
+
+</body>
+</html>
