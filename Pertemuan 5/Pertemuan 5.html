@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemrograman Web 1 - Link Pada HTML</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 14px;
+            color: #222;
+            background-color: white;
+        }
+
+        .container {
+            width: 700px;
+            margin: 50px auto;
+            border-top: 2px solid #344054;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 5px 5px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 10px 5px;
+        }
+
+        p {
+            margin: 8px 5px;
+        }
+
+        nav {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 6px 5px;
+            font-size: 13px;
+        }
+
+        section {
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+        }
+
+        section h2 {
+            margin-top: 8px;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 30px;
+        }
+
+        footer {
+            padding: 5px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Pemrograman Web 1 - Link Pada HTML</h1>
+            <p>Praktikum pengenalan link pada bahasa Pemrograman HTML</p>
+        </header>
+
+        <nav>
+            <a href="#home">HOME</a> |
+            <a href="#materi">MATERI</a> |
+            <a href="#praktikum">PRAKTIKUM</a> |
+            <a href="#kontak">KONTAK</a>
+        </nav>
+
+        <!-- HOME -->
+        <section id="home">
+            <h2>HOME</h2>
+
+            <p>
+                Selamat datang di praktikum Pemrograman web
+                dengan materi link pada HTML.
+            </p>
+
+            <p>
+                Halaman ini memberikan contoh-contoh dari
+                penggunaan link pada HTML
+            </p>
+        </section>
+
+        <!-- MATERI -->
+        <section id="materi">
+            <h2>MATERI</h2>
+
+            <p>
+                Link digunakan untuk menghubungkan satu halaman
+                ke halaman lainnya
+            </p>
+
+            <p>
+                Link dibuat menggunakan tag &lt;a&gt;
+            </p>
+
+            <p>Contoh :</p>
+
+            <p>
+                <a href="https://www.unpam.ac.id" target="_blank">
+                    Kunjungi website Satu Unpam
+                </a>
+            </p>
+
+            <p>
+                Atribut href digunakan untuk menentukan alamat
+                atau halaman tujuan
+            </p>
+        </section>
+
+        <!-- PRAKTIKUM SEBELUMNYA -->
+        <section id="praktikum">
+            <h2>PRAKTIKUM SEBELUMNYA</h2>
+
+            <p>
+                Klik materi berikut untuk membuka file dan
+                praktikum pertemuan sebelumnya
+            </p>
+
+            <ul>
+                <li>
+                    <a href="Pemrograman Web 1.html">
+                        Pertemuan 2 - Struktur HTML
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Pertemuan 3.html">
+                        Pertemuan 3 - Pengaturan Teks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Pertemuan 4.html">
+                        Pertemuan 4 - List HTML
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- LINK DOWNLOAD -->
+        <section>
+            <h2>Link Download</h2>
+
+            <p>
+                Halaman ini memberikan contoh untuk download
+                file dengan link
+            </p>
+
+            <p>
+                <a href="file.pdf" download>Download File</a>
+            </p>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontak">
+            <h2>KONTAK</h2>
+
+            <p>
+                Pada halaman kontak memberikan contoh untuk link
+                pada email yang akan otomatis membuka aplikasi email
+            </p>
+
+            <p>
+                <a href="mailto:email@example.com">Send Email</a>
+            </p>
+        </section>
+
+        <footer>
+            <a href="#home">Kembali ke home</a>
+
+            <p>© 2026 [INTAN] P.S. All Right Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
